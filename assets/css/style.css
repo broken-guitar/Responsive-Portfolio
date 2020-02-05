@@ -221,13 +221,34 @@ input[type=submit] {
 
 /* ---------------------------------------------------- */
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+  
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+  }
+
+}
 
 @media screen and (max-width: 768px) {
   nav {
     /* float: right; */
     margin-top: 25px;
     /* padding-right: 15px; */
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    /* margin: 100px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    clear: both;
   }
 
 }
@@ -266,6 +287,40 @@ input[type=submit] {
     padding-right: 15px;
     text-align: center;
     align-content: center;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    clear: both;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #main-container {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: calc(100vh - 70px);
+  }
+
+  .work {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
   }
 
 }
